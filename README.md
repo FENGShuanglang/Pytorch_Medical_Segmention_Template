@@ -25,6 +25,6 @@
         ├─f4
         └─f5
 ### 第二步：
-根据自己的情况修改Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py文件  
+根据自己的情况修改Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py文件(带\*号的是要注意修改的)
 ### 第三步：
 运行Pytorch_Project_template\Linear_lesion_Code\UNet的train.py文件  
