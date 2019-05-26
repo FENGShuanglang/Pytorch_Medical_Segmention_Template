@@ -4,8 +4,9 @@
 2.自动实现n折交叉验证  
 3.损失函数为Dice+BCE  
 4.优化器为SGD，ploy学习策略  
-5.自动保存n折的checkpoint文件  
-6.自动保存n折的tensorboard log日志，支持前后多次实验可视化对比 只需将UNet文件夹复制后重命名为：“UNet_修改内容”即可，在此基础上修改  
+5.验证指标：Acc,Dice,Jaccard,Sen,Spe  
+6.自动保存n折的checkpoint文件  
+7.自动保存n折的tensorboard log日志，支持前后多次实验可视化对比 只需将UNet文件夹复制后重命名为：“UNet_修改内容”即可，在此基础上修改  
 
 ### 想用此工程你需要做的：
 #### 第一步：在Dataset文件夹下创建固定格式的数据文件夹（以Linear_lesion数据为例）：
