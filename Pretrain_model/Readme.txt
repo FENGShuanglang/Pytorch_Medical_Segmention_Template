@@ -1,0 +1,1 @@
+要加载预训练模型，需在Project_template\Linear_lesion_Code\UNet\model\resnet.py里面的def resnetxx()函数里将此模型路径加载上
