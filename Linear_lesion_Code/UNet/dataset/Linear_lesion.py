@@ -52,8 +52,8 @@ class LinearLesion(torch.utils.data.Dataset):
             label = Image.open(self.label_lists[index])
           
             label = np.array(label) 
-            label[label!=127]=0
-            label[label==127]=1
+            label[label!=255]=0
+            label[label==255]=1
             # label=np.argmax(label,axis=-1)
             # label[label!=1]=0
             # augment image and label
