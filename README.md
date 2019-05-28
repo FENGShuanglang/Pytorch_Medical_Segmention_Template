@@ -9,7 +9,8 @@
 7.自动保存n折的tensorboard log日志，支持前后多次实验可视化对比 只需将UNet文件夹复制后重命名为：“UNet_修改内容”即可，在此基础上修改  
 
 ### 想用此工程你需要做的：
-#### 第一步：在Dataset文件夹下创建固定格式的数据文件夹（以Linear_lesion数据为例）：
+#### 第一步：
+在Dataset文件夹下创建固定格式的数据文件夹（以Linear_lesion数据为例）：
 
 ##### ─Linear_lesion
     ├─img
