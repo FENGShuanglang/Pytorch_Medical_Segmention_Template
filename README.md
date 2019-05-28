@@ -1,6 +1,6 @@
 # Pytorch_Medical_Segmention_Template
 ### 本工程文件实现了如下功能：
-1.基于Unet的单类分割  
+1.基于Unet的单类分割（Unet参数可变，可根据自己实际情况调整通道缩减倍数（设置feature_scale即可））  
 2.自动实现n折交叉验证  
 3.损失函数为Dice+BCE  
 4.优化器为SGD，ploy学习策略  
