@@ -33,7 +33,7 @@ class DefaultConfig(object):
     num_classes=1 #分割类别数，二类分割设置为1，多类分割设置成 类别数+加背景          **
     cuda='3' #GPU id选择        **
     use_gpu=True 
-    pretrained_model_path='/home/FENGsl/Project_template/Linear_lesion_Code/UNet/checkpoints/4/model_057_0.5774.pth.tar' #test的时候模型文件的选择（当mode='train'的时候用）
+    pretrained_model_path='/home/FENGsl/Project_template/Linear_lesion_Code/UNet/checkpoints/4/model_057_0.5774.pth.tar' #test的时候模型文件的选择（当mode='test'的时候用）
     save_model_path='./checkpoints'#保存模型的文件夹
     
 
