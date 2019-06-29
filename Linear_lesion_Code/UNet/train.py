@@ -92,8 +92,8 @@ def train(args, model, optimizer,criterion, dataloader_train, dataloader_val,wri
             # get weight_map
             weight_map=torch.zeros(args.num_classes)
             weight_map=weight_map.cuda()
-            for i in range(args.num_classes):
-                weight_map[i]=1/(torch.sum((label==i).float())+1.0)
+            for t in range(args.num_classes):
+                weight_map[t]=1/(torch.sum((label==t).float())+1.0)
             # print(weight_map)
 
             loss_aux=F.binary_cross_entropy_with_logits(main_out,label,weight=None)
@@ -185,8 +185,7 @@ def main(mode='train',args=None,writer=None,k_fold=1):
     dataset_val = LinearLesion(dataset_path, scale=(args.crop_height, args.crop_width),k_fold_test=k_fold,mode='val')
     dataloader_val = DataLoader(
         dataset_val,
-        # this has to be 1
-        batch_size=len(args.cuda.split(',')),
+        batch_size=len(args.cuda.split(',')),# the default is 1(the number of gpu), you can set it to what you want
         shuffle=True,
         num_workers=args.num_workers,
         pin_memory=True,
@@ -196,8 +195,7 @@ def main(mode='train',args=None,writer=None,k_fold=1):
     dataset_test = LinearLesion(dataset_path, scale=(args.crop_height, args.crop_width),k_fold_test=k_fold,mode='test')
     dataloader_test = DataLoader(
         dataset_test,
-        # this has to be 1
-        batch_size=len(args.cuda.split(',')),
+        batch_size=len(args.cuda.split(',')),# the default is 1(the number of gpu), you can set it to what you want
         shuffle=True,
         num_workers=args.num_workers,
         pin_memory=True,
