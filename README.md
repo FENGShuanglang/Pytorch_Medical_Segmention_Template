@@ -10,7 +10,7 @@
 
 ### 想用此工程你需要做的：
 #### 第一步：
-在Dataset文件夹下创建固定格式的数据文件夹（以Linear_lesion数据为例）：
+在Dataset文件夹下创建固定格式的数据文件夹（以Linear_lesion数据为例,f1,f2,f3..是文件夹名字，里面存放每折的图片）：
 
 ##### ─Linear_lesion
     ├─img
