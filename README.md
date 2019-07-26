@@ -1,4 +1,14 @@
 # Pytorch_Medical_Segmention_Template
+## Introduction
+
+## Prerequisites
+- PyTorch 1.0   
+   - `pip install torch torchvision`
+- tqdm
+   - `pip install tqdm`
+- imgaug
+   - `pip install six numpy scipy Pillow matplotlib scikit-image opencv-python imageio Shapely`
+   - `pip install imgaug`
 ## This project implements the following functions:
 1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
 2. Automatically realize ***N-fold*** cross-validation
