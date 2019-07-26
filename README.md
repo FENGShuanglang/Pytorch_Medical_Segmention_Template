@@ -1,5 +1,5 @@
 # Pytorch_Medical_Segmention_Template
-### This project implements the following functions:
+## This project implements the following functions:
 1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
 2. Automatically realize ***N-fold*** cross-validation
 3. Employs ***Dice+BCE*** as a loss function
@@ -8,24 +8,25 @@
 6. Automatically save the N-fold ***checkpoint file***
 7. Automatically save the N-fold ***tensorboard log***. Support ***visual comparison*** of multiple experiments before and after, just copy the UNet folder and rename it to: "UNet_xxxxx", then modify it on this.
 
-### 想用此工程你需要做的：
-#### 第一步：
-在Dataset文件夹下创建固定格式的数据文件夹（以Linear_lesion数据为例,f1,f2,f3..是文件夹名字，里面存放每折的图片）：
+## What you should do if you want to use this project:
+## Step 1：
+Create a fixed-format data folder under the Dataset folder (using the *Linear_lesion* data as an example, f1, f2, f3.. is the folder name, which stores each fold(N-flod) image):
 
-##### ─Linear_lesion
-    ├─img
-    │  ├─f1
-    │  ├─f2
-    │  ├─f3
-    │  ├─f4
-    │  └─f5
-    └─mask
-        ├─f1
-        ├─f2
-        ├─f3
-        ├─f4
-        └─f5
-### 第二步：
-根据自己的情况修改Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py文件(带\*号的是要注意修改的)
-### 第三步：
-运行Pytorch_Project_template\Linear_lesion_Code\UNet的train.py文件  
+#### ─Linear_lesion
+      |
+      |─img
+      │  ├─f1
+      │  ├─f2
+      │  ├─f3
+      │  ├─f4
+      │  └─f5
+      └─mask
+         ├─f1
+         ├─f2
+         ├─f3
+         ├─f4
+         └─f5
+## Step 2：
+Modify ***Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py*** according to your needs(rows marked with '\*' require special attention)
+## Step 3：
+Run the ***train.py*** file of Pytorch_Project_template\Linear_lesion_Code\UNet 
