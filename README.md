@@ -29,4 +29,4 @@ Create a fixed-format data folder under the Dataset folder (using the *Linear_le
 ## Step 2：
 Modify `Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py` according to your needs(rows marked with '\*' require special attention)
 ## Step 3：
-Run the ***train.py*** file of Pytorch_Project_template\Linear_lesion_Code\UNet 
+Run the `train.py` file of `Pytorch_Project_template\Linear_lesion_Code\UNet` 
