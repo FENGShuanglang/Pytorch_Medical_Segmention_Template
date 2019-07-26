@@ -1,6 +1,6 @@
 # Pytorch_Medical_Segmention_Template
 ## This project implements the following functions:
-#### 1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
+1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
 2. Automatically realize ***N-fold*** cross-validation
 3. Employs ***Dice+BCE*** as a loss function
 4. The optimizer is SGD, and the learning strategy is ***'ploy'***
@@ -27,6 +27,6 @@ Create a fixed-format data folder under the Dataset folder (using the *Linear_le
          ├─f4
          └─f5
 ## Step 2：
-Modify ***Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py*** according to your needs(rows marked with '\*' require special attention)
+Modify `Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py` according to your needs(rows marked with '\*' require special attention)
 ## Step 3：
 Run the ***train.py*** file of Pytorch_Project_template\Linear_lesion_Code\UNet 
