@@ -12,7 +12,7 @@
 ## Step 1：
 Create a fixed-format data folder under the Dataset folder (using the *Linear_lesion* data as an example, f1, f2, f3.. is the folder name, which stores each fold(N-flod) image):
 
-#### ─Linear_lesion
+    ─Linear_lesion
       |
       |─img
       │  ├─f1
@@ -25,7 +25,7 @@ Create a fixed-format data folder under the Dataset folder (using the *Linear_le
          ├─f2
          ├─f3
          ├─f4
-         └─f5
+         └─f5 
 ## Step 2：
 Modify `Pytorch_Project_template\Linear_lesion_Code\UNet\utils\config.py` according to your needs(rows marked with '\*' require special attention)
 ## Step 3：
