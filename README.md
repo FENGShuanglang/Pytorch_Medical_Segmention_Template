@@ -1,12 +1,12 @@
 # Pytorch_Medical_Segmention_Template
 ### This project implements the following functions:
 1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
-2. Automatically realize n-fold cross-validation
-3. Using Dice+BCE as a loss function
-4. The optimizer is SGD, the purchase learning strategy
-5. Evaluation indicators: Acc, Dice, Jaccard, Sen, Spe
-6. Automatically save the n-fold checkpoint file
-7. Automatically save the n-fold tensorboard log log. Support visual comparison of multiple experiments before and after, just copy the UNet folder and rename it to: "UNet_xxxxx", then modify it on this basis.
+2. Automatically realize ***N-fold*** cross-validation
+3. Employs ***Dice+BCE*** as a loss function
+4. The optimizer is SGD, and the learning strategy is ***'ploy'***
+5. Evaluation indicators: ***Acc, Dice, Jaccard, Sen, Spe***
+6. Automatically save the N-fold ***checkpoint file***
+7. Automatically save the N-fold ***tensorboard log***. Support ***visual comparison*** of multiple experiments before and after, just copy the UNet folder and rename it to: "UNet_xxxxx", then modify it on this.
 
 ### 想用此工程你需要做的：
 #### 第一步：
