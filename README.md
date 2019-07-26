@@ -12,7 +12,7 @@ This project is a medical image segmentation template based on ***Pytorch*** imp
    - `conda install six numpy scipy Pillow matplotlib scikit-image opencv-python imageio Shapely`
    - `conda install imgaug`
    
-## This project implements the following functions:
+## Supported functions:
 1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
 2. Automatically realize ***N-fold*** cross-validation
 3. Employs ***Dice+BCE*** as a loss function
@@ -21,7 +21,7 @@ This project is a medical image segmentation template based on ***Pytorch*** imp
 6. Automatically save the N-fold ***checkpoint file***
 7. Automatically save the N-fold ***tensorboard log***. Support ***visual comparison*** of multiple experiments before and after, just copy the UNet folder and rename it to: "UNet_xxxxx", then modify it on this.
 
-## What you should do if you want to use this project:
+## What you should do:
 ## Step 1：
 Create a fixed-format data folder under the Dataset folder (using the *Linear_lesion* data as an example, f1, f2, f3.. is the folder name, which stores each fold(N-flod) image):
 
