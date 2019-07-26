@@ -3,6 +3,7 @@
 ## Introduction
 This project is a medical image segmentation template based on ***Pytorch*** implementation, which implements the basic and even most of the functions you need in medical image segmentation experiments. Such as data processing, the design of loss, tool files, save and visualization of log, model files, training ,validation, test and project configuration.
 
+
 ## Prerequisites
 - PyTorch 1.0   
    - `conda install torch torchvision`
@@ -11,7 +12,8 @@ This project is a medical image segmentation template based on ***Pytorch*** imp
 - imgaug
    - `conda install six numpy scipy Pillow matplotlib scikit-image opencv-python imageio Shapely`
    - `conda install imgaug`
-   
+
+
 ## Supported functions:
 1. ***Unet-based*** single class segmentation. (Unet parameters are variable, you can adjust the channel reduction factor (feature_scale) according to your actual needs)
 2. Automatically realize ***N-fold*** cross-validation
@@ -20,6 +22,7 @@ This project is a medical image segmentation template based on ***Pytorch*** imp
 5. Evaluation indicators: ***Acc, Dice, Jaccard, Sen, Spe***
 6. Automatically save the N-fold ***checkpoint file***
 7. Automatically save the N-fold ***tensorboard log***. Support ***visual comparison*** of multiple experiments before and after, just copy the UNet folder and rename it to: "UNet_xxxxx", then modify it on this.
+
 
 ## What you should do:
 ## Step 1：
