@@ -6,6 +6,10 @@ This project is a medical image segmentation template based on ***Pytorch*** imp
 ## Folder
 - `Dataset`: the folder where dataset is placed.
 - `Linear_lesion_Code`: the folder where model and model environment code are placed,`Linear_lesion` is the name of task. Many different models can be put in this folder, for example, I only put `UNet`.
+   - `dataset`: the file of data preprocessing.
+   - `model`: model files.
+   - `utils`: utils files(include many utils)
+      - `ddd`
 - `Pretrain_model`:  pretriand encoder model,for example,resnet34.
 
 ## Prerequisites
