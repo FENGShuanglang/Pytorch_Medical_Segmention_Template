@@ -9,7 +9,11 @@ This project is a medical image segmentation template based on ***Pytorch*** imp
    - `dataset`: the file of data preprocessing.
    - `model`: model files.
    - `utils`: utils files(include many utils)
-      - `ddd`
+      - `config.py`: some configuration about project parameters.
+      - `loss.py`: some custom loss functions
+      - `utils.py`: some definitions of evaluation indicators
+   - `metric.py`: offline evaluation function
+   - `train.py`: training, validation and test function. 
 - `Pretrain_model`:  pretriand encoder model,for example,resnet34.
 
 ## Prerequisites
