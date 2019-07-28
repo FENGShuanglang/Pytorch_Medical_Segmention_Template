@@ -3,6 +3,10 @@
 ## Introduction
 This project is a medical image segmentation template based on ***Pytorch*** implementation, which implements the basic and even most of the functions you need in medical image segmentation experiments. Such as data processing, the design of loss, tool files, save and visualization of log, model files, training ,validation, test and project configuration.
 
+## Files
+- `Dataset`: the fold where dataset is placed.
+- `Linear_lesion_Code`: the fold where model and model environment code are placed,`Linear_lesion` is the name of task.This folder can put many different models, for example, I only put `UNet`.
+- `Pretrain_model`:  pretriand encoder model,for example,resnet34.
 
 ## Prerequisites
 - PyTorch 1.0   
