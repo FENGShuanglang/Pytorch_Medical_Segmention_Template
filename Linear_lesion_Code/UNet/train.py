@@ -208,7 +208,7 @@ def main(mode='train',args=None,writer=None,k_fold=1):
     
     
     #load model
-    model_all={'UNet':UNet(in_channels=args.in_channels, n_classes=args.num_classes)}
+    model_all={'UNet':UNet(in_channels=args.input_channel, n_classes=args.num_classes)}
     model=model_all[args.net_work]
     cudnn.benchmark = True
     # model._initialize_weights()
